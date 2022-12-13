@@ -7,14 +7,17 @@
  */
 int main(void)
 {
-	char c;
+	char alp = 'a';
 
-	c = 'a';
-	while
-		(c <= 'z') {
-			if (c != 'q' && c != 'e')
-				putchar(c);
-			c++;
-	putchar('\n');
+	while (alp <= 'z')
+	{
+		if (alp == 'q' || alp == 'e')
+		{
+
+		}
+		else
+			putchar(alp);
+			alp++;
+	}
 	return (0);
 }
