@@ -20,6 +20,6 @@ int main(void)
 			alp++;
 		}
 	}
-	putchar(alp);
+	putchar('\n');
 	return (0);
 }
