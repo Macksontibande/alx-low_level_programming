@@ -11,7 +11,7 @@ int main(void)
 
 	while (alp <= 'z')
 	{
-		if (alp != 'q' || alp != 'e')
+		if (alp != 'q' && alp != 'e')
 		{
 			putchar(alp);
 			alp++;
