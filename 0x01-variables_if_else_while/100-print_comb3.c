@@ -13,8 +13,8 @@ int main(void)
 	for (num = 0; num <= 9; num++)
 		for (numb = 1; numb <= 8; numb++)
 		{
-			putchar(num);
-			putchar(numb);
+			putchar(num + '0');
+			putchar(numb + '0');
 			putchar(',');
 			putchar(' ');
 		}
