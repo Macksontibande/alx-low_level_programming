@@ -12,7 +12,7 @@ int main(void)
 	while (alp >= 'a')
 	{
 		putchar(alp);
-		alp++;
+		alp--;
 	}
 	putchar('\n');
 	return (0);
