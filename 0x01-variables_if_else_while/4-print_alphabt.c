@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (alp != 'q' && alp != 'e')
 		{
-			putchar(alp);		
+			putchar(alp);
 		}
 		alp++;
 	}
