@@ -2,10 +2,13 @@
 
 /**
  * _abs - Computes abslute value of a number
- * @n: is number to be to checked
+ * @n: is the int to be to checked
  * Return: 0
  */
-int _abs(int)
+int _abs(int n)
 {
-	return (n >= 0 ? n : n * -1);
+	if (n >= 0)
+		return (n);
+	else
+		return (-n);
 }
