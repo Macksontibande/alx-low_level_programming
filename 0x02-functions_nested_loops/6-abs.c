@@ -2,7 +2,7 @@
 
 /**
  * _abs - Computes abslute value of a number
- * @int: i a function used to check
+ * @n: is number to be to checked
  * Return: 0
  */
 int _abs(int)
