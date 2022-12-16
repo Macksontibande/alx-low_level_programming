@@ -1,18 +1,20 @@
 #include "main.h"
 
 /**
- * print_most_numbers - Print num except 2 and 4
- *
- * Return: void
+ * more_numbers - print more numbers
  */
-void print_most_numbers(void)
+void more_numbers(void)
 {
-	char c;
+	int i, j;
 
-	for (c == '0'; c <= '9'; c++)
+	for (i = 1; i <= 10; i++)
 	{
-		if (!(c == '2' || c == '4'))
-			_putchar(c);
+		for (j = 0; j <= 14; j++)
+		{
+			if (j >= 10)
+				_putchar('1');
+			_putchar(j % 10 + '0');
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
