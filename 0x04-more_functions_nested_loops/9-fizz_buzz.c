@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int start = 1, end = 100;
+	int n;
 
 	n = 1;
 	printf("%d", n);
@@ -14,7 +14,7 @@ int main(void)
 	{
 		if ((n % 3 == 0) && (n % 5 == 0))
 		{
-			printf("FizzBuzz");
+			printf(" FizzBuzz");
 		}
 		else if (n % 3 == 0)
 		{
