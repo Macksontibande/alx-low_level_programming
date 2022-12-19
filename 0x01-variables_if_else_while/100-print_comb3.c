@@ -19,9 +19,9 @@ int main(void)
 				putchar(numb + '0');
 				if (num + numb < 17)
 				{
-				putchar(',');
-				putchar(' ');
+					putchar(',');
 				}
+			putchar(' ');
 			}
 		}
 	return (0);
