@@ -15,10 +15,13 @@ int main(void)
 		{
 			if (num - numb < 0)
 			{
-			putchar(num + '0');
-			putchar(numb + '0');
-			putchar(',');
-			putchar(' ');
+				putchar(num + '0');
+				putchar(numb + '0');
+				if (num + numb < 17)
+				{
+				putchar(',');
+				putchar(' ');
+				}
 			}
 		}
 	return (0);
