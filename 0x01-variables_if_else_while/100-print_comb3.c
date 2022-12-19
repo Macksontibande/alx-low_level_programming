@@ -20,8 +20,8 @@ int main(void)
 				if (num + numb < 17)
 				{
 					putchar(',');
+					putchar(' ');
 				}
-				putchar(' ');
 			}
 		}
 	putchar('\n');
