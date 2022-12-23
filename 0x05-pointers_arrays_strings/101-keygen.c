@@ -3,9 +3,9 @@
 #include <time.h>
 
 /**
- * main - generate random valid passwords for the 101-crackme program
+ * main - Generate random valid passwords for the 101-crackme program
  *
- * Retur: 0
+ * Return: Always 0
  */
 int main(void)
 {
@@ -42,6 +42,6 @@ int main(void)
 	}
 	}
 	}
-	printf("%d", password);
-	return (0);
-}	
+printf("%d", password);
+return (0);
+}
