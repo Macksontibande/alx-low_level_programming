@@ -20,15 +20,19 @@ int main(void)
 			{
 				for (num4 = 0; num4 < 10; num4++)
 				{
-					if (num1 + num2 < num3 + num4 && !(num1 == 9 && num2 == 8))
+					if (num1 <= num3 && num1 + num2 < num3 + num4)
 					{
-						putchar(num1 + '0');
-						putchar(num2 + '0');
-						putchar(' ');
-						putchar(num3 + '0');
-						putchar(num4 + '0');
-						putchar(',');
-						putchar(' ');
+					putchar(num1 + '0');
+					putchar(num2 + '0');
+					putchar(' ');
+					putchar(num3 + '0');
+					putchar(num4 + '0');
+
+					if (!(num1 == 9 && num2 == 8))
+					{
+					putchar(',');
+					putchar(' ');
+					}
 					}
 				}
 			}
