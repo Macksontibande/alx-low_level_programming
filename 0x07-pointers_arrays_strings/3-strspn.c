@@ -1,20 +1,29 @@
-#include "mai.h"
+#include "main.h"
 
 /**
- * _strchr - locates a charecter in a string
- * @s: the string we are investigating
- * @c: the charecter to locate
- * Return: c or null
+ * _strspn - gets length of prefix subscript
+ * @s: an input
+ * @accept: an input
+ * Return: 0
  */
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
+	unsigned int n = 0;
 	int i;
 
-	for (i = 0; s[i] >= '\0'; i++)
+	while (*s)
 	{
-		if (s[i] == c)
-			return (s + i);
+		for (i = 0; accept[i]; i++)
+		{
+			if (*s == accept[i])
+			{
+				n++;
+				break;
+			}
+			else if (accept[i + 1] == '\0')
+				return (n);
+		}
+		s++;
 	}
-
-	return ('\0');
+	return (n);
 }
