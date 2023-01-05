@@ -6,12 +6,9 @@
  * @n: natural number
  * Return: square root of a number
  */
-int is_prime_number(int n)
+int _sqrt_recursion(int n)
 {
-	int root;
-
-	if (n * n = root)
-		return (n);
-	if (n == root)
+	if (n < 0)
 		return (-1);
-	return (1 * is_prime_number(n + 1));
+	return (number(1, n));
+}
