@@ -7,33 +7,24 @@
  */
 int main(void)
 {
-	int num1;
-	int num2;
-	int num3;
-	int num4;
+	int i, j;
 
-	for (num1 = 0; num1 < 10; num1++)
+	for (i = 0; i <= 99; i++)
 	{
-		for (num2 = 0; num2 < 10; num2++)
+		for (j = 0; j <= 99; j++)
 		{
-			for (num3 = 0; num3 < 10; num3++)
+			if (i < j)
 			{
-				for (num4 = 0; num4 < 10; num4++)
-				{
-					if (num1 <= num3 && num1 + num2 < num3 + num4)
-					{
-					putchar(num1 + '0');
-					putchar(num2 + '0');
-					putchar(' ');
-					putchar(num3 + '0');
-					putchar(num4 + '0');
+				putchar((i / 10) + '0');
+				putchar((i % 10) + '0');
+				putchar(' ');
+				putchar((j / 10) + '0');
+				putchar((j % 10) + '0');
 
-					if (!(num1 == 9 && num2 == 8))
-					{
+				if (i != 98 || j != 99)
+				{
 					putchar(',');
 					putchar(' ');
-					}
-					}
 				}
 			}
 		}
